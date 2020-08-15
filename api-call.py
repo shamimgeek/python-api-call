@@ -27,7 +27,7 @@ if num_jokes > 1:
   print(colored(choice(results)["joke"], color='blue'))
   
 elif num_jokes == 1:
-  print(colored(f"I found one joke about {user_input}"), color='blue')
-  print(colored(res["results"][0]["joke"]), color='blue')
+  print(colored(f"I found one joke about {user_input}",color='blue'))
+  print(colored(results[0]["joke"], color='blue'))
 else:
   print(colored(f"Sorry, couldn't find a joke with your term: {user_input}", color='red'))
